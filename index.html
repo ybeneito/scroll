@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll animation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scoll.js" defer></script>
+    <script src="feed.js" defer></script>
+</head>
+
+<body>
+    <div class="imgs">
+      <img
+        src="imgs/img-1.jpg"
+        alt="image 1"
+        data-img
+        id="img-1"
+        class="top-section-img show"
+      />
+      <img src="imgs/img-2.jpg" alt="image 2" data-img id="img-2" />
+      <img src="imgs/img-3.jpg" alt="image 3" data-img id="img-3" />
+
+    </div>
+    <section class="top-section full-screen-section">
+      <div class="left">
+        <h1>Démonstration d'animation au scroll</h1>
+        <p>
+          Cette page utilise l'observateur d'intesection pour naviguer au scroll afin d'afficher des éléments dans une vue agréable
+        </p>
+      </div>
+      <div class="right">
+        <!--TODO ajouter des images-->
+        <img src="imgs/img-1.jpg" width="400px" alt="">
+        <img src="imgs/img-2.jpg" width="400px" alt="">
+        <img src="imgs/img-3.jpg" width="400px" alt="">
+      </div>
+    </section>
+    <section class="full-screen-section first-main-section" id="section1">
+      <h1 id="section1title"></h1>
+      <p id="section1p"></p>
+      <div data-img-to-show="#img-1"></div>
+    </section>
+    <section class="full-screen-section">
+      <h1 id="section2title"></h1>
+      <p id="section2p"></p>
+      <div data-img-to-show="#img-2"></div>
+    </section>
+    <section class="full-screen-section">
+      <h1 id="section3title"></h1>
+      <p id="section3p"></p>
+      <div data-img-to-show="#img-3"></div>
+    </section>
+
+</html>
